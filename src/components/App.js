@@ -6,12 +6,12 @@ const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLogin = () => {
-    setIsLoggedIn(!isLoggedIn);
+    setIsLoggedIn(true);
   };
 
   return (
     <div className="App">
-      <h1>{isLoggedIn ? "Welcome Back!" : "Please Log In"}</h1>
+      <h1>Parent Component</h1>
       <LoginForm isLoggedIn={isLoggedIn} onLogin={handleLogin} />
     </div>
   );

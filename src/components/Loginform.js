@@ -7,7 +7,7 @@ function LoginForm({ isLoggedIn, onLogin }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (username && password) {
-      onLogin(); // Notify the parent component
+      onLogin();
     } else {
       alert("Please enter both username and password!");
     }
