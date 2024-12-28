@@ -14,7 +14,7 @@ function LoginForm({ isLoggedIn, onLogin }) {
   };
 
   if (isLoggedIn) {
-    return <p>You are already logged in!</p>;
+    return <p>You are logged in!</p>;
   }
 
   return (
